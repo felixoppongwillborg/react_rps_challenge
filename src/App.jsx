@@ -9,6 +9,6 @@ function App() {
       <button id="paper">Paper</button>
       <button id="scissors">Scissors</button>
     </div>
-  )}
+    )
 
 export default App;
