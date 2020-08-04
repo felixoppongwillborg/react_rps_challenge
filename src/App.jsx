@@ -1,15 +1,17 @@
 import React, {Component} from 'react';
 
-
+const weapons = ["rock", "paper", "scissors"]
 class App extends Component {
   state = {
     playerChoice: "",
+    computer: "",
   }
   onClick(e) {
    
     const playerChoice = e.target.id 
+    const computer = weapons[Math.floor(Math.random() * weapons.length)] 
   }
-  render (){
+  render () {
   return (
     <div>
       <h1 id="title">Rock Paper Scissors</h1>
