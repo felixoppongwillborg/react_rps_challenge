@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Button, } from "semantic-ui-react";
 
 const weapons = ["rock", "paper", "scissors"];
 class App extends Component {
@@ -35,20 +36,16 @@ class App extends Component {
   render() {
     return (
       <>
-        <div>
+        <div id="game">
           <h1 id="title">Rock Paper Scissors</h1>
-          <button id="rock" onClick={(e) => this.onClick(e)}>
-            Rock
-          </button>
-          <button id="paper" onClick={(e) => this.onClick(e)}>
-            Paper
-          </button>
-          <button id="scissors" onClick={(e) => this.onClick(e)}>
-            Scissors
-          </button>
+          <Button circular icon="hand rock outline" size="massive" id="rock" onClick={(e) => this.onClick(e)} />
+
+          <Button circular icon="hand paper outline" size="massive" id="paper" onClick={(e) => this.onClick(e)} />
+
+          <Button circular icon="hand scissors outline" size="massive" id="scissors" onClick={(e) => this.onClick(e)} />
         </div>
-        <div>
-          <h1 id="result">{this.state.results}</h1>
+        <div id="result">
+          <h1>{this.state.results}</h1>
         </div>
       </>
     );
