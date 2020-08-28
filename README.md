@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0051e0de-3503-46b5-ac2d-617c055cc4cc/deploy-status)](https://app.netlify.com/sites/amazing-volhard-7db815/deploys)
+
 ## Rock Paper Scissors Tech interview Challenge.
 
 Build a Rock Paper Scissors game as part of a hiring process which included two interviews, pre and post implementing the game
