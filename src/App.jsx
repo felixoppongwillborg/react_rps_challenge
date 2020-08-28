@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, } from "semantic-ui-react";
+import { Button } from "semantic-ui-react";
 
 const weapons = ["rock", "paper", "scissors"];
 class App extends Component {
@@ -9,6 +9,7 @@ class App extends Component {
     results: "",
   };
   onClick(e) {
+    debugger;
     const playerChoice = e.target.id;
     const computer = weapons[Math.floor(Math.random() * weapons.length)];
     const results = this.getResults(playerChoice, computer);
@@ -35,19 +36,43 @@ class App extends Component {
   }
   render() {
     return (
-      <>
-        <div id="game">
-          <h1 id="title">Rock Paper Scissors</h1>
-          <Button circular icon="hand rock outline" size="massive" id="rock" onClick={(e) => this.onClick(e)} />
+      <div id="game">
+        <h1 id="title">Rock Paper Scissors</h1>
 
-          <Button circular icon="hand paper outline" size="massive" id="paper" onClick={(e) => this.onClick(e)} />
+        <Button
+          id="rock"
+          icon="hand rock outline"
+          size="massive"
+          onClick={(e) => this.onClick(e)}
+        >
+          Rock
+        </Button>
+        <Button
+          id="paper"
+          icon="hand paper outline"
+          size="massive"
+          onClick={(e) => this.onClick(e)}
+        >
+          Paper
+        </Button>
 
-          <Button circular icon="hand scissors outline" size="massive" id="scissors" onClick={(e) => this.onClick(e)} />
-        </div>
+        <Button
+          id="scissors"
+          icon="hand scissors outline"
+          size="massive"
+          onClick={(e) => this.onClick(e)}
+        >
+          Scissors
+        </Button>
+
         <div id="result">
+          <h3>
+            Player choose {this.state.playerChoice} and computer choose{" "}
+            {this.state.computer}
+          </h3>
           <h1>{this.state.results}</h1>
         </div>
-      </>
+      </div>
     );
   }
 }
