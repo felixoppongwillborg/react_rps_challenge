@@ -9,7 +9,6 @@ class App extends Component {
     results: "",
   };
   onClick(e) {
-    debugger;
     const playerChoice = e.target.id;
     const computer = weapons[Math.floor(Math.random() * weapons.length)];
     const results = this.getResults(playerChoice, computer);
