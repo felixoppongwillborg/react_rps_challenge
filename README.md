@@ -8,7 +8,7 @@ Rock vs Paper -> Paper wins
 Rock vs Scissors -> Rock wins
 Paper vs Scissors -> Scissors wins
 ```
-It was totally up me how I wanted to work, what programming language I wanted to use, if I wanted to deliver game logic only or build a web based interface where a player is challenged by the computer or where two players can play against each other. 
+It was up me how I wanted to work, what programming language I wanted to use, if I wanted to deliver game logic only or build a web based interface where a player is challenged by the computer or where two players can play against each other. 
 
 In my game the user can play against the computer that randomly chooses a weapon, the player or the computer get a point for each win.
 
